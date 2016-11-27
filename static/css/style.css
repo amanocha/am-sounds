@@ -1,0 +1,160 @@
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 75px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.75);
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Clip text element */
+.clip-text {
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 .25em;
+    text-align: center;
+    color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text-one {
+    background-image: url("../img/nightlife-title.jpeg");
+}
+
+.main {
+    background-image: url("../img/nightlife.jpeg");
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.panel-default {
+    background-color: rgba(255, 255, 255, 0.65);
+    font-family: 'Roboto', sans-serif;
+    margin: 25px;
+    margin-right: 100px;
+}
+
+.panel-default > .panel-heading, .panel-body {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: inherit;
+    color: #5900b3;
+    padding: 10px 10px 0px;
+}
+
+.panel-default > .panel-heading {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.account {
+    margin-top: 50px;
+}
+
+.form-group {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.form-control {
+    /*border-color: white;*/
+}
+
+.btn-default {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #5900b3;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default.active {
+    background-color: #f3e6ff;
+    color: #5900b3;
+}
+
+.btn-link, .btn-link:hover, .btn-link:active {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    color: #5900b3;
+}
+
+.area{
+  color:#fff;
+  animation:blur .75s ease-out 1;
+  text-shadow:0px 0px 5px #fff,
+      0px 0px 7px #fff;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+
+

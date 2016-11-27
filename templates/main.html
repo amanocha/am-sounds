@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AM Sounds</title>
+    <meta charset="utf-8">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Bungee+Inline|Roboto:400,900" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel=stylesheet type=text/css>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>
+                <div class='clip-text clip-text-one' id='message'></div>
+            </h1>
+        </div>
+        <div class="main">
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Login</div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="user">Username:</label>
+                                    <input type="text" class="form-control" id="user" placeholder="Enter username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Login</button>
+                                </div>
+                                <div class="form-group">
+                                    <a type="submit" class="btn btn-link" href="create_account">Create Account</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/lib/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
